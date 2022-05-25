@@ -288,3 +288,7 @@ div#links div.col {
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
+
+#headerabt {
+    cursor: pointer;
+}
