@@ -28,16 +28,15 @@ body {
 }
 
 .nav-link {
-    color: var(--seafoam);
-    font-size: 1.5em;
+    color: var(--seafoam)!important;
 }
 
-.nav-link span.navtxt {
-    font-size: 1em;
+.nav-link i {
+    font-size: 1.2em;
 }
 
 .nav-link:hover {
-    color: var(--yellow);
+    color: var(--yellow)!important;
 }
 
 .navbar-nav .nav-link.active,
@@ -45,16 +44,12 @@ body {
     color: var(--white);
 }
 
-div.maincont {
+div#maincont {
     margin-top: 1em;
 }
 
 div.col {
     padding: 1em 0;
-}
-
-.w400 {
-    width: 400px;
 }
 
 .w400 h1 {
@@ -172,7 +167,7 @@ h4 {
 }
 
 .aboutexit .btn:hover {
-    background-color: var(--seafoam);
+    background-color: var(--lime);
     color: var(--black)
 }
 
@@ -268,20 +263,25 @@ div#links div.col {
 .cardpic {
     margin: 0;
     padding: 0;
-}
-
-.cardtitle {
-    position: absolute;
-    color: var(--white);
-    z-index: 1;
-    background-color: #515262c4;
-    width: calc(100% - 2em);
-    left: 1em;
-    top: 45%;
+    max-width: 400px;
 }
 
 .card {
     margin-top: 1em;
+    cursor: pointer;
+}
+
+.cardtitle {
+    display: block;
+    margin-bottom: 1em;
+    font: var(--rounded);
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.carousel-inner a {
+    text-decoration: none;
 }
 
 #maincont {
@@ -291,4 +291,58 @@ div#links div.col {
 
 #headerabt {
     cursor: pointer;
+}
+
+.accordion-item {
+    font-family: var(--rounded);
+    background-color: var(--seafoam);
+}
+
+.accordion-button {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--slate);
+    color: var(--yellow);
+}
+
+.accordion-button {
+    font-weight: 600;
+}
+
+.accordion i {
+    font-size: 1.3em;
+    padding-right: 0.5em;
+}
+
+.accordion-body i {
+    font-size: 1em;
+}
+
+.accordion span.highlight {
+    background: var(--yellow);
+    padding: 0 0.2em;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.accordion-button::after {
+    background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+.footer {
+    margin-top: 30vh;
+}
+
+small {
+    font-size: 0.5em;
 }

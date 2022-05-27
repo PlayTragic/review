@@ -9,3 +9,6 @@ function openAbt() {
 function closeAbt() {
     $('#about').empty("about.html");
 }
+$(function() {
+    $("#footer").load("footer.html");
+});
