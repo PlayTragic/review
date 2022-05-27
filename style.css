@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Do+Hyeon&family=Dongle&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Do+Hyeon&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Odibee+Sans&family=Sunflower:wght@300;500;700&display=swap');
 :root {
     --white: #fff5de;
     --yellow: #e0eb8d;
@@ -13,7 +13,21 @@
     --red: #d23c4f;
     --main: 'Noto Sans KR';
     --title: 'Odibee Sans', 'Do Hyeon';
-    --rounded: 'Comfortaa', 'Dongle';
+    --rounded: 'Comfortaa', 'Sunflower';
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: var(--white);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
 }
 
 body {
@@ -213,6 +227,7 @@ div#links div.col {
     margin: 0;
     max-height: 15em;
     padding: 0.5em;
+    font-weight: 500;
 }
 
 .aboutscreen {
@@ -233,6 +248,7 @@ div#links div.col {
 
 #aboutquote h1 {
     font-family: var(--title);
+    font-size: 2em;
     margin: 0;
 }
 
@@ -294,7 +310,6 @@ div#links div.col {
 }
 
 .accordion-item {
-    font-family: var(--rounded);
     background-color: var(--seafoam);
 }
 
