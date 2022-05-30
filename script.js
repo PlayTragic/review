@@ -1,14 +1,14 @@
 $(function() {
-    $("#header").load("header.html");
+    $("#header").load("/scripts/header.html");
 });
 
 function openAbt() {
-    $('#about').load("about.html");
+    $('#about').load("/scripts/about.html");
 }
 
 function closeAbt() {
-    $('#about').empty("about.html");
+    $('#about').empty("/scripts/about.html");
 }
 $(function() {
-    $("#footer").load("footer.html");
+    $("#footer").load("/scripts/footer.html");
 });
