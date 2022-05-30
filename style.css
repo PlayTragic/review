@@ -45,7 +45,7 @@ body {
     color: var(--seafoam)!important;
 }
 
-.nav-link i {
+.nav-link i.bi {
     font-size: 1.2em;
 }
 
@@ -227,7 +227,6 @@ div#links div.col {
     margin: 0;
     max-height: 15em;
     padding: 0.5em;
-    font-weight: 500;
 }
 
 .aboutscreen {
@@ -266,13 +265,13 @@ div#links div.col {
     margin: 1em 1em 0 1em;
 }
 
-.card i {
+.card i.bi {
     font-size: 7em;
     color: var(--dark);
     line-height: 0.7em;
 }
 
-.card i:hover {
+.card i.bi:hover {
     color: var(--lime);
 }
 
@@ -327,13 +326,9 @@ div#links div.col {
     font-weight: 600;
 }
 
-.accordion i {
+.accordion i.bi {
     font-size: 1.3em;
     padding-right: 0.5em;
-}
-
-.accordion-body i {
-    font-size: 1em;
 }
 
 .accordion span.highlight {
@@ -359,5 +354,5 @@ div#links div.col {
 }
 
 small {
-    font-size: 0.5em;
+    font-size: 0.7em;
 }
