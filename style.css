@@ -112,6 +112,7 @@ h4.linktitle {
     margin: 3em auto 0 auto;
     background: var(--white);
     padding: 0;
+    word-break: keep-all;
 }
 
 .review {
